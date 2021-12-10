@@ -12,4 +12,9 @@ describe('Anagrams#search_anagrams') do
     text = Anagrams.new()
     expect(text.search_anagrams("tea", "eats")).to(eq(false))
   end
+
+  it('checks for vowels') do
+    text = Anagrams.new()
+    expect(text.search_anagrams("apple", "teeth")).to(eq(true))
+  end
 end

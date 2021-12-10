@@ -13,6 +13,12 @@ class Anagrams
     return true
   else
     return false
+    puts ("These are not Anagrams!")
+  end
+  if (word_one.includes?("a", "e", "i", "o", "u"))
+    return true
+  else
+    return false
   end
   
     
