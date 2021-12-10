@@ -19,7 +19,7 @@ describe('Anagrams#search_anagrams') do
   end
 
   it('will remove all special characters') do
-    text = Anagrams.new("tea!")
-    expect(text.search_anagrams()).to(eq("tea"))
+    text = Anagrams.new()
+    expect(text.search_anagrams("tea!")).to(eq("tea"))
   end
 end
