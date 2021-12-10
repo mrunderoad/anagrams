@@ -7,7 +7,8 @@ class Anagrams
     @text = text
   end
 
-  def search_anagrams(word_one, word_two)
-
+  def search_anagrams(word_one)
+    # anagram_array = []
+    # text_array = @text.split("")
   end
 end
