@@ -17,4 +17,9 @@ describe('Anagrams#search_anagrams') do
     text = Anagrams.new()
     expect(text.search_anagrams("apple", "teeth")).to(eq(true))
   end
+
+  it('') do
+    text = Anagrams.new()
+    expect(text.search_anagrams()).to(eq())
+  end
 end

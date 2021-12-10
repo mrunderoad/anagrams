@@ -17,8 +17,10 @@ class Anagrams
   end
   if (word_one.includes?("a", "e", "i", "o", "u"))
     return true
+    puts("Nice anagram, friend.")
   else
     return false
+    puts("Needs a vowel to be a correct word!")
   end
   
     
