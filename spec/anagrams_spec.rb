@@ -3,8 +3,8 @@ require('anagrams')
 
 
 describe('Anagrams#search_anagrams') do
-  it('checks if two words are in fact anagrams') do
-  words = Anagrams.new()
-  expect(words.search_anagrams("tea", "eat")).to(eq(true))
+  it('returns true if both two are the same length') do
+  text = Anagrams.new()
+  expect(text.search_anagrams("tea", "eat")).to(eq(true))
   end
 end
