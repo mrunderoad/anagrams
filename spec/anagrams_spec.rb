@@ -3,8 +3,8 @@ require('anagrams')
 
 
 describe('Anagrams#search_anagrams') do
-  it('takes in one word and puts it into an array') do
+  it('checks if two words are in fact anagrams') do
   words = Anagrams.new()
-  expect(words.search_anagrams("tea")).to(eq(["t","e","a"]))
+  expect(words.search_anagrams("tea", "eat")).to(eq(true))
   end
 end
