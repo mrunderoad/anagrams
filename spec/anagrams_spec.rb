@@ -18,8 +18,8 @@ describe('Anagrams#search_anagrams') do
     expect(text.search_anagrams("apple", "teeth")).to(eq(true))
   end
 
-  it('') do
-    text = Anagrams.new()
-    expect(text.search_anagrams()).to(eq())
+  it('will remove all special characters') do
+    text = Anagrams.new("tea!")
+    expect(text.search_anagrams()).to(eq("tea"))
   end
 end
