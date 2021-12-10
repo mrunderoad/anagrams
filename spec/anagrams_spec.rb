@@ -7,4 +7,9 @@ describe('Anagrams#search_anagrams') do
   text = Anagrams.new()
   expect(text.search_anagrams("tea", "eat")).to(eq(true))
   end
+
+  it('returns false if one word is longer than the other') do
+    text = Anagrams.new()
+    expect(text.search_anagrams("tea", "eats")).to(eq(false))
+  end
 end
