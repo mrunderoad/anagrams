@@ -1,6 +1,7 @@
 class Anagrams
-  def inititialize(text)
+  def inititialize(text, words)
     @text = text
+    @words = words
   end
 
   def text=(text)
