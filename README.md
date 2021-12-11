@@ -3,8 +3,26 @@
 This is a Ruby independent project for Epicodus. 
 
 
-### Running Scripts
+### Technologies Used
 
+* ruby
+* docker
+
+## Description
+
+This program is used to determine weather the input of a word or sentence is an Anagram or an Antigram.
+
+# Setup
+
+navigate to github.com/mrunderoad/anagrams, and clone the repository.
+next, run the script
+
+## Bugs
+no known bugs at this time
+
+## Licensing
+MIT 
+Copyright (c) @ Isaac Overstreet
 Running scripts is optional at Epicodus. However, if you want to experiment with it, follow these steps:
 
 * The script must be located in `lib` and be called `script.rb`.
