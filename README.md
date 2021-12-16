@@ -23,6 +23,8 @@ no known bugs at this time
 ## Licensing
 MIT 
 Copyright (c) @ Isaac Overstreet
+
+
 Running scripts is optional at Epicodus. However, if you want to experiment with it, follow these steps:
 
 * The script must be located in `lib` and be called `script.rb`.
