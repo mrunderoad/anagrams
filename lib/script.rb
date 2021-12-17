@@ -1,13 +1,9 @@
-#!/usr/bin/ruby
-
 require('./lib/anagrams')
 
-puts "Enter word one:"
-word_one = gets.chomp
-puts "Enter word two:"
-word_two = gets.chomp
-anagram = Anagrams.new(word_one)
-# if results == true
-#   puts "Thats an anagram!"
-# else
-#   puts "Thats no amagram!"
+puts "Enter word or sentence:"
+word1 = gets.chomp
+puts "Enter another word or sentence:"
+word2 = gets.chomp
+anagram = Anagrams.new(word1, word2)
+results = anagram.search_anagrams
+puts "#{results}"

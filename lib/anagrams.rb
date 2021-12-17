@@ -1,42 +1,31 @@
+require('pry')
+
 class Anagrams
 
-  def initialize(word)
-    @word = word
+  def initialize(word1, word2)
+    @word2 = word2.downcase.gsub(/\s+/, '')
+    @word1 = word1.downcase.gsub(/\s+/, '')
   end
 
-  def search_anagrams(word, word2)
-    input_array = []
-    input_array = @word.split(' ')
-
-    input_array.each do |word|
-    punctuation = split_word.select{|x| x.match(/[^a-z]/i)}
-    punctuation.join('')
-    split_word.delete_if{|x| x.match(/[^a-z]/i)}
-    clean_word = split_word.join('')
-      if (word.length == word2.length)
-        return true
+  def search_anagrams()
+    if (@word1.length == @word2.length)
+      if (/[aeiouy]/.match(@word1) == nil && /[aeiouy]/.match(@word2) == nil) 
+        return "Your two words/sentences are not actually words, you need a vowel!"
       else
-        return false
+        word1_sorted = @word1.chars.sort.join("")
+        word2_sorted = @word2.chars.sort.join("")
+        if word1_sorted == word2_sorted
+          return "You entered two words/sentences that are anagrams!!"
+        end
+        word1_regex = Regexp.new(@word1)
+        if (word1_regex.match(@word2) == nil)
+          return "Antigram alert!"
+        end
       end
-    end
-
-    if (word.includes?("a", "e", "i", "o", "u"))
-      return true
     else
-      return false
+      return "Your two words/sentences have different lengths, anagrams have to be the same!"
     end
-
-    if clean_word == search_word
-      input_array[counter] = replace_word.split('').push(punctuation).join('')
-    end
-    
-    if clean_word == search_word.capitalize()
-      input_array[counter] = replace_word.capitalize().split('').push(punctuation).join('')
-    end
-     # input_array.join(' ')
-     # input_array
   end
- 
 end
 
 

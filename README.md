@@ -17,6 +17,14 @@ This program is used to determine weather the input of a word or sentence is an 
 navigate to github.com/mrunderoad/anagrams, and clone the repository.
 next, run the script
 
+## If you have Ruby installed:
+ - clone
+ - run `bundle install`
+ - run `rspec` to run tests
+ - run `ruby ./lib/script.rb` to run the script in Terminal
+## If you are using docker
+ - 
+
 ## Bugs
 no known bugs at this time
 
