@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require('./lib/anagrams')
 
 puts "Enter word or sentence:"

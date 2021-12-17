@@ -34,7 +34,7 @@ To run this project:
  - All following steps will be run in your Terminal.
  - Run `docker pull ruby:2.6.5`
  - Run `docker-compose up` to run tests from the anagrams_spec.rb file.
- - Run `docker-compose run --rm app ruby script.rb` to run the project in your Terminal
+ - Run `docker-compose run --rm app ruby ./lib/script.rb` to run the project in your Terminal
  - Follow the prompts outputted in your Terminal.
 
 ## Bugs
