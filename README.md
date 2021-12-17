@@ -1,42 +1,45 @@
-## Description
+# Anagrams and Anitgrams
 
-This is a Ruby independent project for Epicodus. 
+### By Isaac Overstreet
+#### Dec, 2021
 
+## Short Description
+
+Ruby week one project for anagrams/antigrams.
 
 ### Technologies Used
 
-* ruby
-* docker
+* Ruby
+* Docker
+* Pry
+* rspec
 
 ## Description
 
-This program is used to determine weather the input of a word or sentence is an Anagram or an Antigram.
+This program is used to determine weather the input of a word or sentence is an Anagram or an Antigram. It will work even with spacing, punctuation and special characters. 
 
 # Setup
 
-navigate to github.com/mrunderoad/anagrams, and clone the repository.
-next, run the script
-
-## If you have Ruby installed:
- - clone
- - run `bundle install`
- - run `rspec` to run tests
- - run `ruby ./lib/script.rb` to run the script in Terminal
-## If you are using docker
- - 
+To run this project:
+* Navigate to github.com/mrunderoad/anagrams, and clone the repository onto your local machine.
+* Navigate to the cloned repo and open with VS code.
+* The next steps will be determined if you have Ruby or Docker installed. Instructions for both are included underneath.
+### If you have Ruby installed:
+ - All following steps will be run in your Terminal.
+ - Run `bundle install`
+ - Run `rspec` to run tests from the anagrams_spec.rb file.
+ - Run `ruby ./lib/script.rb`to run the project in your Terminal.
+ - Follow the prompts outputted in your Terminal.
+### If you are using docker
+ - All following steps will be run in your Terminal.
+ - Run `docker pull ruby:2.6.5`
+ - Run `docker-compose up` to run tests from the anagrams_spec.rb file.
+ - Run `docker-compose run --rm app ruby script.rb` to run the project in your Terminal
+ - Follow the prompts outputted in your Terminal.
 
 ## Bugs
 no known bugs at this time
 
 ## Licensing
-MIT 
+[MIT](https://opensource.org/licenses/MIT)
 Copyright (c) @ Isaac Overstreet
-
-
-Running scripts is optional at Epicodus. However, if you want to experiment with it, follow these steps:
-
-* The script must be located in `lib` and be called `script.rb`.
-
-* Run the following command: `docker-compose run --rm app ruby lib/script.rb`.
-
-Once again, we recommend aliasing this command if you plan to run scripts often. If you prefer to name your script something else, you just need to update the command to use the correct path and file name.

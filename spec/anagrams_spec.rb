@@ -9,18 +9,27 @@ describe('Anagrams#search_anagrams') do
   end
 
   it('returns false if one word is longer than the other') do
-    word = Anagrams.new()
-    word2 = Anagrams.new()
-    expect(word.search_anagrams("tea", "eats")).to(eq(false))
+   anagram = Anagrams.new("tea", "eats") 
+   expect(anagram.search_anagrams).to(eq("Your two words/sentences have different lengths, anagrams have to be the same!"))
   end
 
-  it('checks for vowels') do
-    word = Anagrams.new()
-    expect(word.search_anagrams("apple", "teeth")).to(eq(true))
+  it('checks for vowels, returns false if no vowels.') do
+    anagram = Anagrams.new("trr", "wss")
+    expect(anagram.search_anagrams).to(eq("Your two words/sentences are not actually words, you need a vowel!"))
   end
 
-  it('will remove all special characters') do
-    word = Anagrams.new()
-    expect(word.search_anagrams("tea!")).to(eq("tea"))
+  it('will check for anagrams') do
+  anagram = Anagrams.new("add", "dad")
+  expect(anagram.search_anagrams).to(eq("You entered two words/sentences that are anagrams!!"))
+  end
+
+  it('will check for antigrams') do
+  anagram = Anagrams.new("mom", "dad")
+  expect(anagram.search_anagrams).to(eq("Antigram alert!"))
+  end
+
+  it('removes spaces, puncuation and capitilization to check if sentence is anagram') do
+    anagram = Anagrams.new("This is a sentence.", "Is a sentence this.")
+    expect(anagram.search_anagrams).to(eq("You entered two words/sentences that are anagrams!!"))
   end
 end
